@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESUPUESTOS</title>
+    <link rel="stylesheet" href="../css/class.css">
+</head>
+
+<!--ESTRUCTURA DE BUSCADOR PRESENTE EN TODAS LAS PÁGINAS-->
+
+<body>
+
+    <div class="container">
+
+<header class="cabezera" id="cabezera"><h1>ART TOYS</h1></header>
+
+<nav class="buscador">
+    <hr>
+    <ul class="estructura">
+        
+       <li><a href="../index.html">INICIO</a></li>
+       <li><a href="./galeria.html">GALERIA</a></li>
+       <li><a href="./presupuestos.html" class="activo">PRESUPUESTOS</a></li>
+       <li><a href="./contacto.html">CONTACTO</a></li>
+
+    </ul>
+    <hr>
+</nav>
+
+<!--ESTRUCTURA DE FICHA DE PRESUPUESTOS-->
+
+<main class="container">
+   <section class="presupuestos">
+
+   <h2>Presupuesto</h2>
+
+   <form id="formulario">
+
+          <h2>Datos de contacto</h2>
+
+          <div class="fila">
+
+ <!--DATOS NECESARIOS DE LA PERSONA-->
+
+                 <label for="nombre">NOMBRE:</label>
+                 <input type="text" id="nombre" placeholder="Nombre">
+                 
+
+                 <label for="apellidos">APELLIDOS:</label>
+                 <input type="text" id="apellidos" placeholder="Apellidos">
+                 
+
+                 <label for="telefono">TELEFONO:</label>
+                 <input type="text" id="telefono" placeholder="Telefono">
+                
+
+                 <label for="email">EMAIL:</label>
+                 <input type="text" id="email" placeholder="Email"> 
+                
+         
+          </div>
+
+          <div class="extras">
+
+          </div>
+
+     <div class="presupuesto">
+
+          <h3>Presupuesto</h3>
+
+<!--ESTRUCTURA DE EXTRAS AGREGABLES PARA EL PRODUCTO-->
+
+           <label>
+          <input type="checkbox" id="pintura">Pintura personalizada (+20$)
+            </label>
+
+            <label>
+          <input type="checkbox" id="envio">Envio con caja premium (+10$)
+            </label>
+
+          <label>Producto:</label>
+
+<!--ESTRUCTURA DE LOS 3 TIPOS DE PIEZAS DISPONIBLES CON SUS RESPECTIVOS PRECIOS-->
+
+          <select id="producto">
+          <option value="0">Selecciona la pieza</option>
+           <option value="100">Pieza clasica</option>
+           <option value="150">Pieza limitada</option>
+           <option value="250">Colaboracion especial</option>
+          </select>
+
+           <label>Plazo (dias):</label>
+          <input type="number" id="plazo" min="0" placeholder="Ej:10">
+
+          <h3>Total: <span id="total">0</span>$</h3>
+
+           <button type="submit" id="enviar">Enviar</button>
+
+    </div>
+
+<!--CONDICIONES OBLIGATORIAS-->
+
+     <label>
+          Acepto condiciones: <input type="checkbox" id="condiciones" required>
+          </label>
+
+</form>
+
+</section>
+</main>
+
+<!--PIE DE PAGINA-->
+
+<footer class="footer-contenido">
+
+    <div class="redes">
+      <p>Siguenos:</p>
+      <img src="../images/facebook.png" alt="Facebook" width="30" height="30">
+      <img src="../images/instagram.png" alt="Instagram" width="30" height="30">
+      <img src="../images/twiter.png" alt="Twiter" width="30" height="30">
+    </div>
+            
+    <div class="direccion">
+      <p>Art toys</p>
+      <p>Calle Larios, Malaga</p>
+      <p>España</p>
+    </div>
+
+    <div class="legal">
+      <p>&copy; 2026 ART TOYS</p>
+      <p>Aviso legal</p>
+    </div>
+    
+ </footer>
+
+   
+</div>
+
+<script src="../js/presupuestos.js"></script>
+
+</body>
+
+</html>

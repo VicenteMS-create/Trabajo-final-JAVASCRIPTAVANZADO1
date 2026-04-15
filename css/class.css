@@ -1,0 +1,254 @@
+/*CABECERA*/
+
+body{
+    background-color: whitesmoke;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.cabezera h1{
+    font-size: 60px;
+    text-align: center;
+    font-style: italic;
+    color: black;
+    margin-bottom: 30px;
+}
+.buscador{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    margin-bottom: 30px;
+    z-index: 1000;
+    padding: 10px 0;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+nav a.activo{
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+}
+.estructura{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    letter-spacing: 6px;
+    font-size: smaller;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+#imagenprincipal{
+    display: block;
+    margin: 30px auto;
+}
+
+/*PIE DE PAGINA*/
+
+footer{
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer-contenido{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer-contenido div{
+    margin: 10px;
+}
+.redes img{
+    width: 30px;
+    margin: 5px;
+}
+
+/*INDEX*/
+
+.info h2{
+    font-size: x-large;
+}
+.productos h2{
+    font-size: xx-large;
+}
+.noticias h2{
+    font-size: xx-large;
+    padding-top: 100px;
+}
+.info p{
+    font-size: larger;
+    display: block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+section{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-top: 100px;
+}
+.card img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;;
+}
+.noticias div{
+     margin-bottom: 20px;
+}
+.noticias h2{
+    margin-bottom: 5px;
+}
+
+/*GALERIA*/
+
+.galeria h2{
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    color: black;
+    margin-bottom: 30px;
+}
+#contenedor-galeria{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+#contenedor-galeria img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.galeria img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.galeria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carrusel{
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#contenedor-imagen{
+    width: 100%;
+    height: 600px;
+}
+#imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#prev{
+    left: -50px;
+}
+#next{
+    right: -50px;
+}
+.quesomos h2{
+    text-align: center;
+}
+
+/*PRESUPUESTOS*/
+
+.presupuestos h1{
+    text-align: center;
+    font-size: xx-large;
+}
+.presupuestos{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 70px;
+    border-radius: 50px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+}
+.presupuestos h2{
+    text-align: center;
+    font-size: x-large;
+}
+.fila{
+    display: flex;
+    gap: 10px;
+}
+.fila input{
+    flex: 1;
+}
+.extras{
+    margin: 15px 0;
+    text-align: center;
+}
+.extras label{
+    display: block;
+    margin-bottom: 5px;
+}
+.presupuesto{
+    justify-content: center;
+}
+.presupuesto h3{
+    font-size: x-large;
+}
+.presupuesto{
+    border-radius: 50px;
+    text-align: center;
+}
+#enviar{
+    justify-content: center;
+    margin-top: 350px;
+}
+
+/*CONTACTO*/
+
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+#map {
+    height: 400px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
