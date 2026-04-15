@@ -1,7 +1,7 @@
 
 //Noticias editables de la tienda
 
-fetch('../data/noticias.json')
+fetch('data/noticias.json')
   .then(response => response.json())
   .then(data => {
 
